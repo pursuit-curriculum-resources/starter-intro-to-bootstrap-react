@@ -6,7 +6,7 @@ export default function Hero() {
   // <!-- Set id hero on div for hero/jumbo image -->
   // <!-- ************************** -->
   return (
-    <div className="container-fluid" id="hero">
+    <div className="" id="">
       <img src={heroRoses} className="img-fluid" alt="many roses" />
       <h2>Give the Gift of Roses</h2>
       <span>
