@@ -4,42 +4,42 @@
 // <!-- ************************** -->
 export default function NewsletterForm() {
   return (
-    <div className="">
+    <div className="container">
       <h4>Sign up for our newsletter</h4>
       <form>
         {/* <!-- ************************** -->
             <!-- divs for text inputs -->
-            <!-- Set class mb-3 for outer div -->
-            <!-- Set class mb-3 for inner div div -->
+            <!-- Set class mb-3 on outer div -->
+            <!-- Set class mb-3 on inner div div -->
             <!-- ************************** --> */}
 
-        <div className="">
-          <div className="">
+        <div className="mb-3">
+          <div className="mb-3">
             {/* <!-- ************************** -->
                 <!-- Labels & for Text inputs -->
-                <!-- Set class form-label for label -->
-                <!-- Set class form-control for input -->
+                <!-- Set class form-label on label -->
+                <!-- Set class form-control on input -->
                 <!-- ************************** --> */}
-            <label htmlFor="name" className="">
+            <label htmlFor="name" className="form-label">
               Name
             </label>
-            <input type="text" className="" id="name" />
+            <input type="text" className="form-control" id="name" />
           </div>
           {/* <!-- ************************** -->
               <!-- Labels & for Text inputs -->
-              <!-- Set class form-label for label -->
-              <!-- Set class form-control for div -->
+              <!-- Set class form-label on label -->
+              <!-- Set class form-control on div -->
               <!-- ************************** --> */}
-          <label htmlFor="exampleInputEmail1" className="">
+          <label htmlFor="exampleInputEmail1" className="form-label">
             Email address
           </label>
           <input
             type="email"
-            className=""
+            className="form-control"
             id="exampleInputEmail1"
             aria-describedby="emailHelp"
           />
-          <div id="emailHelp" className="">
+          <div id="emailHelp" className="form-control">
             No trees will be harmed in delivering our newsletters
           </div>
         </div>
@@ -51,9 +51,13 @@ export default function NewsletterForm() {
             <!-- Set class form-check-label on label -->
             <!-- ************************** --> */}
 
-        <div className="">
-          <input type="checkbox" className="" id="exampleCheck1" />
-          <label className="" htmlFor="exampleCheck1">
+        <div className="mb-3 form-check">
+          <input
+            type="checkbox"
+            className="form-check-input"
+            id="exampleCheck1"
+          />
+          <label className="form-check-label" htmlFor="exampleCheck1">
             Send me promo codes daily!
           </label>
         </div>
@@ -64,7 +68,7 @@ export default function NewsletterForm() {
             <!-- ************************** --> */}
 
         <p>Select frequency of newsletters</p>
-        <select className="" aria-label="Default weekly">
+        <select className="form-select" aria-label="Default weekly">
           <option defaultValue>Weekly</option>
           <option value="1">Daily</option>
           <option value="2">Hourly</option>
@@ -73,23 +77,25 @@ export default function NewsletterForm() {
         </select>
         {/* <!-- ************************** -->
             <!-- Checkbox 2 (make into a switch w. Bootstrap) -->
-            <!-- Set class form-check-input  on input -->
+            <!-- Set classes mb-3 form-check form-switch on div -->
+            <!-- Set class form-check-input on input -->
             <!-- Set class form-check-label on label -->
             <!-- ************************** --> */}
 
-        <div className="">
+        <div className="mb-3 form-check form-switch">
           <input
-            className=""
+            className="form-check-input"
             type="checkbox"
             id="flexSwitchCheckDefault"
             readOnly
+            checked
           />
-          <label className="" htmlFor="flexSwitchCheckDefault">
+          <label className="form-check-label" htmlFor="flexSwitchCheckDefault">
             Send my info to affiliates
           </label>
         </div>
         {/* <!-- Set classes btn btn-primary --> */}
-        <button type="submit" className="">
+        <button type="submit" className="btn btn-primary">
           Submit
         </button>
       </form>

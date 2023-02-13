@@ -17,6 +17,16 @@ nav {
   display: none;
 }
 
-img {
+/* img {
   width: 100px;
+} */
+.card-text {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+form {
+  padding: 1em;
+  padding-bottom: 2em;
 }

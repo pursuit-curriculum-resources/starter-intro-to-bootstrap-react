@@ -1,13 +1,13 @@
 export default function Table() {
   // <!-- ************************** -->
   // <!-- Best Sellers table -->
-  // <!-- set class display-5 for h3 -->
+  // <!-- set class display-5 on h3 -->
   // <!-- Set classes table table-striped table-hover text-center on table -->
   // <!-- ************************** -->
   return (
     <>
-      <h3 className="">Best Sellers</h3>
-      <table className="">
+      <h3 className="display-5">Best Sellers</h3>
+      <table className="table table-striped text-center table-hover">
         <thead>
           <tr>
             <th scope="col">#</th>

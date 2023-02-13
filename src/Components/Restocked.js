@@ -6,12 +6,21 @@ import apricotRose from "../Images/mel-pB-IJfg8jb8-unsplash.jpg";
 import { detailsCard1, detailsCard2, detailsCard3 } from "../data";
 
 export default function Restocked() {
+  /* <!-- ************************** -->
+    <!-- Set class container on outer div -->
+    <!-- Set class display-4 on h3 -->
+    <!-- Set class row on inner div -->
+    <!-- ************************** --> 
+    */
+
   return (
-    <div className="">
-      <h3 className="">Just Restocked</h3>
-      <Card details={detailsCard1} image={yellowRose} />
-      <Card details={detailsCard2} image={lavenderRose} />
-      <Card details={detailsCard3} image={apricotRose} />
+    <div className="container">
+      <h3 className="display-4">Just Restocked</h3>
+      <div className="row">
+        <Card details={detailsCard1} image={yellowRose} />
+        <Card details={detailsCard2} image={lavenderRose} />
+        <Card details={detailsCard3} image={apricotRose} />
+      </div>
     </div>
   );
 }
